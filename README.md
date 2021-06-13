@@ -8,3 +8,4 @@ Methods of knowledge engineering
 ### 5. CNN - Convolutional Neural Network
 ### 6. Back propagation
 ### 7. Prediction NN + AR models
+### 8. Prolog - simple puzzle game in prolog.
