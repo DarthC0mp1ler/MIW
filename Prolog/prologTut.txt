@@ -1,0 +1,33 @@
+:- dynamic position/2.
+:- dynamic quest/2.
+
+
+quest(no,0).
+
+position(x,0).
+position(y,0).
+
+%---------------getting position as text----------------
+getPosition :- position(x,X), X =:= 0, position(y,Y), Y=:= 0, write(' center').
+getPosition :- position(x,X), X =:= -1, position(y,Y), Y=:= 0, write(' left').
+getPosition :- position(x,X), X =:= 1, position(y,Y), Y=:= 0, write(' right').
+getPosition :- position(x,X), X =:= 0, position(y,Y), Y=:= 1, write(' forth').
+getPosition :- position(x,X), X =:= 0, position(y,Y), Y=:= -1, write(' back').
+
+start :- quest(no,N), N =:= 0, N1 is N + 1, 
+	retract(quest(no,N)), 
+	assert(quest(no,N1)), 
+	write(' You are in the middle of the room. Go: right, left, back, forth '),
+	write(' You are currently in the'), 
+	getPosition,
+	nl
+	.
+start :- write(' Game already started '), nl.
+
+top('corner wardrobe').
+top('desk').
+top('window').
+
+bottom('doors').
+
+left('picture').

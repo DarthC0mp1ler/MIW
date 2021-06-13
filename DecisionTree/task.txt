@@ -1,0 +1,5 @@
+Task for labs.
+1. Separate the data set into learning and test subsets,
+2. Check the operation of the tree for entropy and Gini coefficient -compare the results,
+3. Check the operation of the tree for different tree depths - compare the results,
+4. Check the operation of random forests for different numbers of decision trees - compare the result

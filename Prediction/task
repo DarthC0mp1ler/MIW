@@ -1,0 +1,12 @@
+Tasks for labs
+1. For stock quotes of the company ...................a,
+propose and implement the division of this data into training dat aand test data,
+2. Suggest a linear autoregressive model (AR model) that takes into
+account several previous company quotes (not more than50).
+Specify model parameters using the least squares method.
+Verify the correctness of the model,
+3. Suggest recurrent neural network for quotation prediction.
+Train the network (use the techniques of network training known to you as abandonment, scaling etc.).
+Verify the correctness of the model,
+4. For quotation prediction, use additional data (e.g., volume or WIG),
+5. Compare AR models and recursive neural networks
